@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>cellPACK Collada test</title>
+    <link rel='stylesheet' type='text/css' href='css/jquery.bonsai.css'>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+    <link rel='stylesheet' type='text/css' href='css/mystyle.css'>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div id="header">
+      <h2>cellPACK Collada -> WebGL test using Three.js</h2>
+    </div>
+    <div id="3dwindow"></div>
+    <div id="selectmol" class="horizontal">
+      <form action="#">   
+        <fieldset>    
+          <label for="filenames">
+            Select a cellPACK-file...
+          </label>    
+          <select name="filenames" id="filenames" autocomplete="off">
+            <option value="models/env_test.dae" selected="selected">ENV protein</option>
+            <option value="models/capsid_test1.dae">HIV Capsid 1</option>
+            <option value="models/capsid_test2.dae">HIV Capsid 2</option>
+            <option value="models/capsid_test3.dae">HIV Capsid 3</option>
+            <option value="models/hiv_test1.dae">Entire HIV 1</option>
+            <option value="models/hiv_test2.dae">Entire HIV 2</option>
+            <option value="models/hiv_test3.dae">Entire HIV 3</option>
+            <option value="models/hiv_test2_tinker.dae">TINKERED HIV 2</option>
+          </select>     
+        </fieldset>
+      </form>
+    </div>
+    <div id="selectshadows" class="horizontal">
+      <form action="#">   
+        <fieldset>    
+          <label for="shadows">
+            Shadows
+          </label>    
+          <select name="shadows" id="shadows" autocomplete="off">
+            <option value="off" selected="selected">off</option>
+            <option value="on">on</option>
+          </select>     
+        </fieldset>
+      </form>
+    </div>
+    <div id="tree">
+    </div>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+    <script src="js/three.min.js"></script>
+    <script src="js/OrbitControls.js"></script>
+    <script src="js/TrackballControls.js"></script>
+    <script src="js/ColladaLoader.js"></script>
+    <script src="js/jquery.bonsai.js"></script>
+    <script src="js/Main.js"></script>
+  </body>
+</html>
